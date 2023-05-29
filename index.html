@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>They Feel Too</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./build/css/app.css" />
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="header--background">
+            <header class="contenedor header">
+                <h1>T<span>hey</span> F<span>eel</span> T<span>oo</span></h1>
+                <nav class="navbar">
+                    <a href="#conocelos">Conocelos</a>
+                    <a href="#galeria">Disfrutalos</a>
+                    <a href="#ayudalos">Ayudalos</a>
+                </nav>
+            </header>
+        </div>
+
+        <div class="video">
+            <div class="overlay">
+                <div class="contenido-video contenedor">
+                    <h2 class="animate">Los animales SIENTEN</h2>
+                    <p class="animate">¡Escucha su voz silenciosa y únete a nuestra causa!</p>
+                </div>
+            </div>
+            <video autoplay muted loop>
+                <source src="./build/img/video/animales.mp4" type="video/mp4">
+                El video no esta disponible
+            </video>
+        </div>
+
+        <section class="contenedor sobre-festival">
+            <div class="imagen">
+                <picture>
+                    <source srcset="/build/img/humanos_y_animales.avif" type="image/avif">
+                    <source srcset="/build/img/humanos_y_animales.webp" type="image/webp">
+                    <img width="400" height="300" src="/build/img/humanos_y_animales.jpg" alt="Imagen Vocalista">
+                </picture>
+            </div>
+            <div class="contenido-festival">
+                <h2>They Feel Too</h2>
+                <p>En todo el mundo</p>
+                <p>Nuestra misión es crear conciencia sobre los animales y fomentar la conexión con ellos. Queremos que
+                    comprendas que los
+                    animales son seres vivos con emociones y merecen respeto. Explorar el mundo animal nos permite
+                    descubrir
+                    su diversidad y
+                    maravilla. Conocer a los animales nos despierta asombro y admiración, y nos insta a proteger su
+                    existencia. Te invitamos
+                    a unirte a nosotros en este viaje de descubrimiento y empatía hacia los animales. Cada pequeño paso
+                    cuenta para crear un
+                    mundo donde los animales sean valorados y respetados. <span>¡Comienza a conocerlos y marca la
+                        diferencia!</span> </p>
+            </div>
+        </section>
+
+        <section id="conocelos" class="conocelos">
+            <h3>Conocelos</h3>
+            <div class="animales-contenedor contenedor">
+                <div v-for="animal of animales" class="animal-card">
+                    <img class="card-img-top" :src="animal.imagen" :alt="animal.nombre">
+                    <h4 class="animal-nombre">{{animal.nombre}}</h4>
+
+                    <p class="section-title">Region</p>
+                    <p>{{animal.region}}</p>
+                    <p class="section-title">Habitat</p>
+                    <p>{{animal.habitat}}</p>
+                    <p class="section-title">Alimentacion</p>
+                    <p>{{animal.alimentacion}}</p>
+                    <p class="section-title">Promedio de Vida</p>
+                    <p>{{animal.promedioDeVida}}</p>
+                    <p class="section-title">Curiosidades</p>
+                    <div class="section-curiosidades" v-for="curiosidad of animal.curiosidades">
+                        <p>{{curiosidad}}</p>
+                    </div>
+                    <p v-if="animal.enPeligroDeExtincion" class="section-danger">
+                        {{animal.enPeligroDeExtincion}}
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="galeria" class="galeria contenedor">
+            <h3>Galeria</h3>
+            <ul class="galeria-imagenes">
+                <picture class="img-animal" :class="imagen.estilo" v-for="imagen of imagenes">
+                    <img width="400" height="300" :src="imagen.imagen" :alt="imagen.alt">
+                </picture>
+            </ul>
+            <div class="videos-contenedor">
+                <iframe class="video-1" src="https://www.youtube.com/embed/YBVMA_yQ4YI" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/B8_P7Oznm18" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section id="ayudalos" class="ayuda bg-verde">
+            <h3>Ayudalos</h3>
+            <div class="contenedor contenedor-ayudas">
+                <div class="ayuda-body">
+                    <ul>
+                        <li v-for="consejo of consejos">
+                            {{consejo}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-container">
+                    <p>Subscribete para recibir notificaciones y mandanos tu opinion!</p>
+                    <form class="row g-3 needs-validation justify-content-center form-subscribe" novalidate>
+                        <div class="col-12 col-md-9">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Raul Funes" required>
+                            <div class="invalid-feedback">
+                                Porfavor ingrese un nombre válido.
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <label for="mail" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <input type="email" class="form-control" id="mail" aria-describedby="inputGroupPrepend"
+                                    placeholder="mail@mail.com" required>
+                                <div class="invalid-feedback">
+                                    Porfavor ingrese un Email valido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea type="text" class="form-control" id="mensaje"></textarea>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Aceptar terminos y condiciones
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debes aceptar antes de enviar
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="site-footer">
+            <p>They Feel Too &#169. Todos los derechos reservados</p>
+            <div>
+                <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/raul-funes/"><i class="bi bi-linkedin"></i></a>
+
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="build/js/app.js"></script>
+</body>
+
+</html>

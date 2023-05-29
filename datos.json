@@ -1,0 +1,229 @@
+{
+  "consejos": [  "Adopta, no compres: Salva una vida y adopta una mascota.",  "Esteriliza y castra: Controla la población de animales domésticos.",  "No abandones: Sé responsable y nunca abandones a tu mascota.",  "Apoya refugios: Dona tiempo o recursos a refugios de animales.",  "Productos cruelty-free: Elige productos no probados en animales.",  "No a la caza furtiva: Rechaza productos de caza ilegal.",  "No al tráfico de especies: Evita comprar animales exóticos o en peligro.",  "Reduce carne: Opta por una dieta más vegetal y sostenible.",  "Conserva hábitats: Protege ecosistemas para la vida silvestre.",  "Educa sobre respeto: Promueve el trato adecuado hacia los animales."]
+
+,
+  "imagenes": [
+    {
+      "alt": "Ardilla comiendo",
+      "imagen": "https://i.postimg.cc/kDP73m9w/ardilla-comiendo.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Ballena cola",
+      "imagen": "https://i.postimg.cc/4d10NRzB/ballena-cola.jpg",
+      "estilo": "img-corta"
+    },
+    {
+      "alt": "Canguro frente",
+      "imagen": "https://i.postimg.cc/hGtz392v/canguro-frente.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Canguro hijo",
+      "imagen": "https://i.postimg.cc/9X74SXYd/canguro-hijo.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Cocodrilo nadando",
+      "imagen": "https://i.postimg.cc/xCSr1PBT/cocodrilo-nadando.jpg",
+      "estilo": "img-corta"
+    },
+    {
+      "alt": "Elefante frente",
+      "imagen": "https://i.postimg.cc/nhzpy0fy/elefante-frente.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Elefante manada",
+      "imagen": "https://i.postimg.cc/DfPhmtvV/elefante-manada.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Leon grito",
+      "imagen": "https://i.postimg.cc/YSKD6CRd/leon-grito.jpg",
+      "estilo": "img-corta"
+    },
+    {
+      "alt": "Pinguino hijo",
+      "imagen": "https://i.postimg.cc/d3kGN8tr/pinguino-hijo.jpg",
+      "estilo": "img-corta"
+    },
+    {
+      "alt": "Serpiente costado",
+      "imagen": "https://i.postimg.cc/HsF6mkqT/serpiente-costado.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Tigre bebiendo",
+      "imagen": "https://i.postimg.cc/tC6hhtcH/tigre-bebiendo.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Tigre mirando",
+      "imagen": "https://i.postimg.cc/9XKSp2Ww/tigre-mirando.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Zorro acostado",
+      "imagen": "https://i.postimg.cc/d3r96zBG/zorro-acostado.jpg",
+      "estilo": "img-corta"
+    },
+    {
+      "alt": "Zorro hijo",
+      "imagen": "https://i.postimg.cc/k4ZjfNdP/zorro-hijo.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Zorro mirando",
+      "imagen": "https://i.postimg.cc/xjJpqZKf/zorro-mirando.jpg",
+      "estilo": "img-larga"
+    },
+    {
+      "alt": "Zorro nieve",
+      "imagen": "https://i.postimg.cc/gk3MH6S1/zorro-nieve.jpg",
+      "estilo": "img-corta"
+    }
+  ],
+  "animales": [
+    {
+      "nombre": "León",
+      "curiosidades": [
+        "Los leones son conocidos por vivir en manadas.",
+        "Los machos tienen una distintiva melena.",
+        "Son considerados depredadores tope en su ecosistema."
+      ],
+      "habitat": "Sabanas y áreas de vegetación densa en África.",
+      "region": "África",
+      "enPeligroDeExtincion": false,
+      "alimentacion": "Carnívoro",
+      "promedioDeVida": "10-14 años en la naturaleza, hasta 20 años en cautiverio",
+      "imagen": "https://i.postimg.cc/CK8dRSLC/leon-portada.png"
+    },
+    {
+      "nombre": "Ballena",
+      "curiosidades": [
+        "Las ballenas son los animales más grandes que han existido en la Tierra.",
+        "Pueden comunicarse a través de complejos cantos.",
+        "Algunas especies de ballenas migran largas distancias cada año."
+      ],
+      "habitat": "Océanos y mares de todo el mundo.",
+      "region": "Varía según la especie y las migraciones.",
+      "enPeligroDeExtincion": "Algunas especies están en peligro de extinción",
+      "alimentacion": "Principalmente plancton, peces y krill.",
+      "promedioDeVida": "Varía según la especie: 40-90 años en general.",
+      "imagen": "https://i.postimg.cc/g2vHPqyK/ballena-portada.jpg"      
+    },
+    {
+      "nombre": "Canguro",
+      "curiosidades": [
+        "Los canguros tienen una forma de locomoción saltadora única llamada canguro.",
+        "Las crías de canguro, llamadas joeys, se desarrollan en una bolsa en el abdomen de la madre.",
+        "Son conocidos por su fuerza y habilidad para saltar largas distancias."
+      ],
+      "habitat": "Principalmente en Australia, en diversos entornos, desde bosques hasta zonas áridas.",
+      "region": "Australia",
+      "enPeligroDeExtincion": false,
+      "alimentacion": "Herbívoro: pasto, hojas, brotes, cortezas y frutas.",
+      "promedioDeVida": "6-8 años en la naturaleza, hasta 15 años en cautiverio",
+      "imagen": "https://i.postimg.cc/BZH6pYJN/canguro-portada.jpg"
+    },
+    {
+      "nombre": "Serpiente",
+      "curiosidades": [
+        "Las serpientes son reptiles sin patas y tienen una piel escamosa.",
+        "Algunas serpientes son venenosas y pueden inyectar veneno a través de colmillos huecos.",
+        "La muda de piel es un proceso común en las serpientes para permitir su crecimiento."
+      ],
+      "habitat": "Varía según la especie: desde selvas hasta desiertos, pasando por zonas acuáticas.",
+      "region": "Varía según la especie y la distribución geográfica.",
+      "enPeligroDeExtincion": "Algunas especies están en peligro de extinción",
+      "alimentacion": "Carnívoro: roedores, aves, huevos, peces y otros reptiles.",
+      "promedioDeVida": "Varía según la especie: 20-30 años en general.",
+      "imagen": "https://i.postimg.cc/fRhrGvSw/serpiente-portada.jpg"
+    },
+    {
+      "nombre": "Zorro",
+      "curiosidades": [
+        "Los zorros son conocidos por su astucia y agilidad.",
+        "Tienen una gran variedad de especies en todo el mundo.",
+        "Algunas especies de zorros pueden trepar árboles."
+      ],
+      "habitat": "Varía según la especie: desde bosques hasta zonas urbanas y desiertos.",
+      "region": "Varía según la especie y la distribución geográfica.",
+      "enPeligroDeExtincion": "Algunas especies están en peligro de extinción",
+      "alimentacion": "Omnívoro: roedores, aves, insectos, frutas y vegetación.",
+      "promedioDeVida": "2-5 años en la naturaleza, hasta 10 años en cautiverio",
+      "imagen": "https://i.postimg.cc/GhPQyn9C/zorro-portada.jpg"
+    },
+    {
+      "nombre": "Elefante",
+      "curiosidades": [
+        "Los elefantes son los animales terrestres más grandes del mundo.",
+        "Tienen una alta inteligencia y una estructura social compleja.",
+        "Su trompa es una adaptación única que les permite manipular objetos y comunicarse."
+      ],
+      "habitat": "Principalmente en áreas de sabana, bosques y selvas de África y Asia.",
+      "region": "África y Asia",
+      "enPeligroDeExtincion": "Algunas especies están en peligro de extinción",
+      "alimentacion": "Herbívoro: hierba, hojas, cortezas, ramas y frutas.",
+      "promedioDeVida": "40-70 años en general, hasta 70+ años en algunos casos",
+      "imagen": "https://i.postimg.cc/Xv5SWPHz/elefante-portada.jpg"
+    },
+    {
+      "nombre": "Pingüino",
+      "curiosidades": [
+        "Los pingüinos son aves marinas que han adaptado sus alas a la vida acuática.",
+        "Son excelentes nadadores y pueden sumergirse a grandes profundidades.",
+        "Forman colonias y se comunican a través de vocalizaciones y comportamientos."
+      ],
+      "habitat": "Principalmente en regiones frías, como la Antártida y otras zonas costeras.",
+      "region": "Varía según la especie y la distribución geográfica.",
+      "enPeligroDeExtincion": "Algunas especies están en peligro de extinción",
+      "alimentacion": "Carnívoro: peces, calamares y krill.",
+      "promedioDeVida": "Varía según la especie: 10-20+ años en general.",
+      "imagen": "https://i.postimg.cc/MpRdp8wV/pinguino-portada.jpg"
+    },
+    {
+      "nombre": "Tigre",
+      "curiosidades": [
+        "Los tigres son los felinos más grandes del mundo.",
+        "Son cazadores solitarios y tienen habilidades de acecho y emboscada excepcionales.",
+        "El tigre es un símbolo icónico de fuerza y belleza en muchas culturas."
+      ],
+      "habitat": "Bosques, selvas y áreas con vegetación densa en Asia.",
+      "region": "Asia",
+      "enPeligroDeExtincion": "Algunas especies están en peligro de extinción",
+      "alimentacion": "Carnívoro: ungulados como ciervos y jabalíes.",
+      "promedioDeVida": "8-10 años en la naturaleza, hasta 15-20 años en cautiverio",
+      "imagen": "https://i.postimg.cc/SQJ3CRpp/tigre-portada.jpg"
+    },
+    {
+      "nombre": "Ardilla",
+      "curiosidades": [
+        "Las ardillas son conocidas por su agilidad y su habilidad para trepar árboles.",
+        "Algunas especies de ardillas tienen colas peludas y esponjosas.",
+        "Son famosas por almacenar y enterrar alimentos en múltiples ubicaciones."
+      ],
+      "habitat": "Bosques, áreas arboladas y parques en diversas regiones del mundo.",
+      "region": "Varía según la especie y la distribución geográfica.",
+      "enPeligroDeExtincion": false,
+      "alimentacion": "Omnívoro: nueces, semillas, frutas, brotes, insectos y huevos de aves.",
+      "promedioDeVida": "2-5 años en la naturaleza, hasta 10 años en cautiverio",
+      "imagen": "https://i.postimg.cc/9QtnCqyy/ardilla-portada.jpg"
+    },
+    {
+      "nombre": "Cocodrilo",
+      "curiosidades": [
+        "Los cocodrilos son grandes reptiles semiacuáticos con mandíbulas poderosas.",
+        "Son excelentes nadadores y pueden permanecer sumergidos durante largos períodos de tiempo.",
+        "Los cocodrilos son depredadores de emboscada y tienen un papel importante en los ecosistemas acuáticos."
+      ],
+      "habitat": "Ríos, lagos, pantanos y manglares en diversas regiones tropicales y subtropicales.",
+      "region": "Varía según la especie y la distribución geográfica.",
+      "enPeligroDeExtincion": "Algunas especies están en peligro de extinción",
+      "alimentacion": "Carnívoro: peces, aves, mamíferos y otros reptiles.",
+      "promedioDeVida": "30-50 años en general, hasta 70+ años en algunos casos",
+      "imagen": "https://i.postimg.cc/ydnfCXHG/cocodrilo-portada.jpg"
+    }
+  ]
+}
