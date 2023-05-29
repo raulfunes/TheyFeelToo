@@ -1,0 +1,92 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$fuente_parrafos;
+    &.fixed-body{
+        overflow: hidden;
+    }
+
+    &.navbar-scroll{
+        @include m.tablet {
+            padding-top: 8.6rem;
+        }  
+    }
+}
+
+h1, h2{
+    font-family: v.$fuente_titulos;
+    font-weight: 700;
+}
+
+h3, h4{
+    font-family: v.$fuente_subtitulos;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    
+    
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 3rem;
+    
+}
+
+h3{
+    font-size: 2.6rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+}
+
+a{
+    font-family: v.$fuente_titulos;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+p{
+    font-family: v.$fuente_parrafos;
+    font-size: 2rem;
+}
+
+.contenedor{
+    width: min(95%, 120rem);
+    margin: 0 auto;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}

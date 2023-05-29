@@ -1,0 +1,29 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.site-footer{
+    background-color: v.$rosa;
+    padding: 2rem;
+    p{
+        margin: 0;
+        text-align: center;
+        color: v.$negro;
+        font-size: 1.5rem;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    a{
+        color: v.$negro;
+        transition: all 300ms ease;
+        margin: 1rem;
+        &:hover{
+            color: v.$blanco;
+        }
+    }
+    
+}

@@ -1,0 +1,136 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.conocelos{
+    background-color: v.$rosa;
+    background-image: url("https://freepngimg.com/thumb/leaves/37361-1-green-leaves-photos.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-blend-mode: multiply;
+    backdrop-filter: brightness(0);
+    padding: 5rem 0;
+
+
+    h3{
+        text-align: center;
+        color: v.$blanco;
+    }
+}
+
+.animales-contenedor{
+    @include m.grid(1, 3rem);
+    @include m.tablet{
+        @include m.grid(2, 3rem);
+    }
+    max-width: 100rem;
+}
+
+.animal-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5rem 3rem;
+    background-color: whitesmoke ;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.44);
+        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.44);
+    height: 100%;
+
+    .animal-nombre{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        
+            &::before {
+                content: "";
+                display: inline-block;
+                width: .5rem;
+                height: 2rem;
+                background-color: v.$rosa;
+                margin: 0 1rem;
+            }
+
+        @include m.tablet{
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        
+            &::before {
+                content: "";
+                display: inline-block;
+                width: .5rem;
+                height: 3rem;
+                background-color: v.$rosa;
+                margin: 0 1rem;
+            }
+        }
+
+        @include m.desktop{
+            font-size: 5rem;
+                margin-bottom: 2rem;
+            
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: .5rem;
+                    height: 4rem;
+                    background-color: v.$rosa;
+                    margin: 0 1rem;
+                }
+        }
+    }
+
+    .section-title{
+        width: fit-content;
+        margin: 1rem 0 0 0;
+        padding-inline: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: inline-block;
+        background-color: v.$rosa;
+        color: v.$blanco;
+    }
+
+    .section-curiosidades{
+        p{
+            font-size: 1.4rem;
+            margin: .2rem 0;
+        }
+    }
+
+    .section-danger{
+        color: red;
+        font-weight: bold;
+        align-self: flex-end;
+        justify-self: end;
+    }
+
+    p, div{
+        align-self: flex-start;
+        text-align: left;
+        font-size: 1.7rem;
+        margin: .5rem 0;
+    }
+}
+
+.card-img-top{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+
+    top: 3rem;
+    right: 2rem;
+    
+    transition: all 300ms ease-in;
+}
+
+.card-img-top:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+}

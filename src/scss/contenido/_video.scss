@@ -1,0 +1,65 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.video{
+    position: relative;
+    height: 100%;
+    
+    @include m.tablet{
+        height: 100vh;
+    }
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    video{
+        width: auto;
+        height: auto;
+        @include m.tablet {
+            width: max-content;
+            height: 120vh;
+        }
+        display: block;
+    }
+}
+
+.overlay{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    
+    background: rgba($color: #000000, $alpha: 0.9);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+
+    @include m.tablet{
+        justify-content: flex-start;
+        text-align: left;
+    }
+}
+
+.contenido-video{
+    z-index: 1;
+
+    h2{
+        color: v.$blanco;
+        font-size: 6rem;
+    }
+
+    p{
+        background-color: v.$rosa;
+        color: v.$blanco;
+        font-weight: bold;
+
+        display: inline-block;
+        padding: 1rem 2rem;
+        
+    }
+}

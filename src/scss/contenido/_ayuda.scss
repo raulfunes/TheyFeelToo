@@ -1,0 +1,122 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.ayuda{
+    padding: 5rem 0;
+    background-color: v.$blanco;
+    h3{
+        text-align: center;
+        color: v.$negro;
+    }
+}
+
+.contenedor-ayudas{
+    padding: 2rem;
+    @include m.tablet{
+        @include m.grid(2, 3rem)
+    }
+}
+
+.pase{
+    p{
+        color: v.$blanco;
+        text-align: center;
+        margin: 0;
+    }
+    .pase-dia{
+        font-size: 2rem;
+        
+        padding: 2rem 0;
+        
+    }
+
+    
+}
+
+.pase-header{
+        background-color: v.$rosa;    
+        p{
+            font-size: 1.6rem;
+            padding: 1rem 0;
+            text-transform: uppercase;
+        }
+}
+
+.ayuda-body{
+        background-color: transparent;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: transparent;
+        }
+
+        li{
+            position: relative;
+            width: fit-content;
+            color: v.$blanco;
+            background-color: v.$rosa !important;
+            font-weight: 700;
+            padding: .2rem 1rem;
+            font-size: 1.6rem;
+            margin: 1rem 0;
+
+            &::before{
+                position: absolute;
+                left: -2rem;
+                top: 1rem;
+                content: '';
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: v.$rosa;
+            }
+        }
+}
+
+.form-container{
+    border: 3px solid v.$rosa;
+    border-radius: 10px;
+    padding: 2rem;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.44);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.44);
+    background-color: v.$blanco;
+
+    p{
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.form-subscribe{
+
+   
+   
+
+    label{
+        font-size: 1.4rem;
+        font-family: v.$fuente_parrafos;
+    }
+    input, textarea{
+        font-size: 1.5rem;
+        font-family: v.$fuente_parrafos;
+    }
+
+    .btn-primary{
+        background-color: v.$rosa;
+        font-size: 1.5rem;
+        border: 1px solid v.$negro;
+        font-family: v.$fuente_parrafos;
+        &:active{
+            background-color: darken($color: v.$rosa, $amount: 10);
+        }
+    }
+}
+
+
+
