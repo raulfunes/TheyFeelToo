@@ -1,5 +1,14 @@
-# TheyFeelToo
-Proyecto realizado para Codo a Codo, el proyecto se baso sobre las ideas del grupo 6, que lamentablemente los participantes: Camila Fernández, Mauro Nanda y Agostina Ortellado  dejaron de participar activamente del desarrollo del mismo. Tuve que reinicializar el repositorio debido a que el anterior quedo en posesion de uno de los anteriores integrantes.
+# Descripción del Proyecto
 
-# Tecnologias
-Se trata de un proyecto desarrollado por el amor a los animales donde podemos conocerlos e informarnos un poco, fue desarrollado con HTML, CSS, JS, SCSS, Vue, y aplique unas cosas de otro curso para mimificar los archivos usando gulp. 
+El proyecto "They Feel Too" es un sitio web dedicado a crear conciencia sobre los animales y resaltar la importancia de reconocer que ellos también tienen sentimientos. Nuestro objetivo es transmitir un mensaje de empatía y conciencia hacia los animales, a la vez que proporcionamos información valiosa sobre diversas especies animales existentes en nuestro planeta.
+
+## Deploy 🚀
+
+Para ver la página puedes dirigirte a: https://theyfeeltoo.netlify.app/
+
+## Herramientas utilizadas :construction_worker:
+
+- HTML
+- SCSS
+- JavaScript
+- Vue
